@@ -16,7 +16,7 @@ body {
 }
 
 .to-do-list {
-
+    width: 90%;
     max-width: 550px;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
@@ -93,10 +93,11 @@ li:hover {
 
 .text {
     flex: 1;
+    min-width: 0;
     color: #d6336c;
     font-size: 1rem;
     font-weight: 500;
-    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .delete-button,
@@ -108,6 +109,7 @@ li:hover {
     padding: 4px 8px;
     transition: 0.25s ease;
     font-size: 1rem;
+    flex-shrink: 0;
 }
 
 .delete-button {
