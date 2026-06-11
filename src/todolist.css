@@ -122,6 +122,11 @@ li:hover {
     color: #d6336c;
     font-weight: 600;
 }
+@media (min-width: 768px) {
+    .text {
+        text-align: left;
+    }
+}
 
 /* Button Row */
 .task-actions {
