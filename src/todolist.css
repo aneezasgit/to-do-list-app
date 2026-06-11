@@ -93,21 +93,20 @@ ol {
 
 /* Task Card */
 li {
-  list-style: none;
+    list-style: none;
+    background: #fff0f5;
+    border: 2px solid #ffd1e0;
+    border-radius: 18px;
 
-  background: #fff0f5;
-  border: 2px solid #ffd1e0;
+    padding: 15px;
+    margin-bottom: 12px;
 
-  border-radius: 18px;
+    display: flex;
+    flex-direction: column;
 
-  padding: 15px;
-  margin-bottom: 12px;
+    align-items: center;
 
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-
-  transition: 0.3s;
+    gap: 15px;
 }
 
 li:hover {
@@ -117,12 +116,11 @@ li:hover {
 
 /* Task Text */
 .text {
-  color: #d6336c;
-  font-size: 1rem;
-  font-weight: 600;
-
-  overflow-wrap: break-word;
-  word-break: break-word;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #d6336c;
+    font-weight: 600;
 }
 
 /* Button Row */
@@ -130,7 +128,6 @@ li:hover {
     display: flex;
     justify-content: center;
     gap: 10px;
-    flex-wrap: wrap;
     width: 100%;
 }
 
