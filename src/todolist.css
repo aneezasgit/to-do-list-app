@@ -85,6 +85,16 @@ li {
     border: 2px solid #ffd1e0;
     transition: 0.3s;
 }
+@media (max-width: 600px) {
+    li {
+        flex-wrap: wrap;
+    }
+
+    .text {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
 
 li:hover {
     transform: scale(1.02);
