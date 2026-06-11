@@ -1,0 +1,203 @@
+.card{
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    text-align: center;
+    display: inline-block;
+    max-width: 250px;
+}
+
+.card .card-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card .card-title {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: hsl(0, 0%, 20%);
+}
+
+.card .card-description {
+    font-family: Arial, sans-serif;
+    color: hsl(0, 0%, 30%);
+}
+
+.student {
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    text-align: left;
+    max-width: 300px;
+}
+
+.user-greeting {
+    font-family: Arial, sans-serif;
+    color: hsl(120, 100%, 25%);
+}
+
+.login-prompt {
+    font-family: Arial, sans-serif;
+    color: hsl(0, 100%, 25%);
+}
+
+.list-category {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: hsl(182, 70%, 71%);
+    color: hsl(230, 96%, 22%);
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.item-list li{
+    font-size: 1.7em;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: hsl(201, 41%, 35%);
+    margin-left: 20px;
+}
+
+.item-list li:hover{
+    color: hsl(87, 67%, 62%);
+    cursor: pointer; 
+}
+
+.button1 {
+    background-color: hsl(72, 65%, 58%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: hsl(326, 85%, 77%);
+    }
+
+.counter-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.counter-display {
+    font-size: 10em;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.counter-button {
+    width: 150px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0px 5px;
+    background-color: hsl(186, 89%, 61%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.counter-button:hover {
+    background-color: hsl(195, 39%, 37%);
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    margin: 0;
+    padding: 20px;
+}
+
+.colour-picker-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: hsl(0, 0%, 20%);
+    text-align: center;
+}
+
+.colour-display {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 80%);
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.colour-display p {
+    font-family: Arial, sans-serif;
+    color: hsl(0, 0%, 20%);
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    color: hsl(0, 0%, 20%);
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+input[type="color"] {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.to-do-list{
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+margin-top: 100px;
+
+}
+
+.to-do-lidt h2{
+   font-size: 4rem; 
+}
+
+.to-do-list button{
+   font-size:  1.7rem;
+   font-weight: bold;
+   padding: 10px, 20px;
+   color: #fff;
+   border: none;
+    border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.5 ease;
+}
+
+.add-button{
+   background-color: green;
+
+}
+
+.add-button:hover{
+    background-color: rgb(141, 212, 141);
+}
+
+.delete-button{
+    background-color: crimson;
+}
+
+.delete-button:hover{
+    background-color: rgb(229, 139, 157);
+}
+
