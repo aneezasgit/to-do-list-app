@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 function MyComponent() {
 
@@ -15,7 +15,28 @@ function MyComponent() {
     const [carYear, setCarYear] = useState(new Date().getFullYear());
     const [carMake, setCarMake] = useState("");
     const [carModel, setCarModel] = useState("");
+    const [count, setCount] = useState(0);
+    const [color, setColor] = useState("green");
+    useEffect(() => {
+        document.title = `count:${count} ${color}`;
+    }, [count, color])
 
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
+
+    useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    console.log("EVENT LISTENER ADDED");
+
+    return() => {
+        window.removeEventListener("resize", handleResize);
+    console.log("EVENT LISTENER REMOVED");
+    }
+    }, []);
+
+    useEffect(() => {
+        document.title = `size: ${width} x ${height}`;
+    }, [width, height])
 
     const updateName = () => {
         setName("Aneeza");
@@ -103,6 +124,23 @@ function MyComponent() {
 
     }
 
+    function addCount(){
+        setCount(c => c + 1);
+    }
+
+    function subtractCount(){
+        setCount(c => c - 1);
+    }
+
+    function changeColor(){
+        setColor(c => c === "green" ? "red" : "green");
+    }
+
+    function handleResize(){
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+    }
+
     return (<div>
                 <input value={name} onChange={handleNameChange} />
                 <p> Name: {name}</p>
@@ -170,6 +208,14 @@ function MyComponent() {
                 <input type="text" value={carMake} onChange={handleCarMake}   placeholder="enter car make" /> <br />
                 <input type="text" value={carModel} onChange={handleCarModel} placeholder="enter car model" /> <br />
                 <button onClick={handleAddCar}> add car</button>
+
+                <p style={{color: color}}> count: {count}</p>
+                <button onClick={addCount}> add </button>
+                <button onClick={subtractCount}> subtract </button>
+                <button onClick={changeColor}>change color</button>
+                <p> window width:{width}px</p>
+                <p> window height:{height}px</p>
+
 
         </div>
            

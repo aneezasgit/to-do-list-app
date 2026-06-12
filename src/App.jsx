@@ -11,6 +11,7 @@
 // import Counter from "./Counter.jsx";
 // import ColourPicker from "./ColourPicker.jsx";
 import ToDoList from "./ToDoList.jsx";
+// import Clock from "./Clock.jsx";
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
       <Counter />
       <ColourPicker /> */}
       <ToDoList />
+      {/* <Clock /> */}
     </>
   );
 }
